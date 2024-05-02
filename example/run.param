@@ -1,0 +1,16 @@
+[input]
+filename=ising_samples.npz
+T=2.5
+epochs=15
+l=16
+learning_rate=0.0005 
+batch_size=100
+shuffbuff=3000
+training_samples=2500
+test_samples=250
+hierarchies=3
+filters=16
+logistic_mix=5
+dropout=0.5 
+num_resnet=2
+entropy_samples=500
