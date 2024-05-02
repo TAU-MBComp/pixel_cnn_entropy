@@ -61,9 +61,5 @@ H = model.fit(train_it,
               callbacks=[cp_callback])  # Pass callback to training
 
 # Save training loss and validation loss
-loss = np.zeros((2, c.epochs))
-loss[0, :], loss[1, :] = np.arange(0, c.epochs), H.history["loss"]
-np.savetxt('loss.dat', np.c_[loss[0, :], loss[1, :]])
-val_loss = np.zeros((2, c.epochs))
-val_loss[0, :], val_loss[1, :] = np.arange(0, c.epochs), H.history["val_loss"]
-np.savetxt(('validation_loss.dat'), np.c_[val_loss[0, :], val_loss[1, :]])
+np.savetxt('loss.dat', H.history["loss"])
+np.savetxt('validation_loss.dat', H.history["val_loss"])
