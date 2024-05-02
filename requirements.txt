@@ -1,0 +1,11 @@
+gmpy2
+h5py
+matplotlib
+mpmath
+numpy
+scipy
+sympy
+tensorflow==2.4.0
+tensorflow-probability==0.12.2
+tensorflow-datasets
+tf_keras
