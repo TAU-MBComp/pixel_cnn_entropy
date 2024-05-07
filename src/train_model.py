@@ -42,7 +42,7 @@ model, dist_ = build_model(image_shape,
 # Compile and train the model
 model.compile(optimizer=tfk.optimizers.Adam(c.learning_rate), metrics=[])
 
-# Save weights to  checkpoint file
+# Save weights to checkpoint file
 checkpoint_path = "weights_{epoch:d}/cp.ckpt"
 checkpoint_dir = os.path.dirname(checkpoint_path)
 print(checkpoint_dir)
